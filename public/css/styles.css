@@ -1,0 +1,19 @@
+#header {
+    background-color: aquamarine;
+    display: inline;
+}
+
+#header ul {
+    list-style-type: circle;
+}
+
+#header li {
+    display: inline;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}

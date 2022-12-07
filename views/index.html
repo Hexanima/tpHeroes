@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <script>
+      let boton = document.getElementById("mandar");
+
+      boton.addEventListener("click", () => {
+        let texto = document.getElementById("texto").innerHTML;
+        let mensaje = document.getElementById("mensaje");
+        mensaje.setAttribute("href", "https://github.com/" + texto);
+        mensaje.innerHTML = texto;
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Babbage</a></li>
+        <li><a href="">Turing</a></li>
+        <li><a href="">Abc</a></li>
+        <li><a href="">Def</a></li>
+      </ul>
+    </div>
+    <h2>Escriba un nombre de Perfil</h2>
+    <input type="text" id="texto" />
+    <button id="mandar">Enviar</button>
+    <a id="mensaje" href="" target="_blank"></a>
+  </body>
+</html>
